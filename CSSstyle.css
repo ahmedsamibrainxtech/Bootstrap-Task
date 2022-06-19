@@ -1,0 +1,834 @@
+                            * {
+                                box-sizing: border-box;
+                            }
+                            
+                            body {
+                                font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif;
+                            }
+                            
+                            #left-navbar {
+                                position: fixed;
+                                padding: 15px 20px;
+                                background-color: #0d4f9a !important;
+                                text-transform: uppercase;
+                                opacity: 1;
+                                z-index: 1000;
+                                left: 0;
+                                top: 0;
+                                margin-top: 150px;
+                            }
+                            
+                            .navbar-text a {
+                                color: #fefefe;
+                                writing-mode: tb-rl;
+                                transform: rotate(-180deg);
+                                font-style: normal !important;
+                                font-size: 14px;
+                                line-height: 17px;
+                                border: none;
+                                padding: 0;
+                                margin: 0;
+                                text-decoration: none !important;
+                            }
+                            
+                            .navbar-text a:hover {
+                                text-decoration: none !important;
+                                color: #fefefe;
+                            }
+                            
+                            nav .breadcrumb {
+                                text-transform: uppercase;
+                                padding: 0 10px;
+                            }
+                            
+                            nav .breadcrumb a {
+                                color: #3c7aae;
+                                font-weight: 500;
+                            }
+                            
+                            .breadcrumb-item+.breadcrumb-item::before {
+                                color: #0d4f9a !important;
+                            }
+                            
+                            nav .breadcrumb a {
+                                background-color: transparent;
+                                color: #0d4f9a;
+                                text-decoration: none !important;
+                            }
+                            
+                            nav .breadcrumb a:hover {
+                                opacity: .6;
+                            }
+                            
+                            .item img {
+                                cursor: pointer;
+                            }
+                            
+                            .item img:hover {
+                                opacity: .6;
+                            }
+                            
+                            .center-image h1 {
+                                font-size: 1.625rem;
+                                font-weight: 700;
+                                text-align: center;
+                                text-shadow: .5px 0 currentColor;
+                                text-transform: uppercase;
+                                padding: 18px 0;
+                                letter-spacing: 0;
+                                line-height: 1.2;
+                                word-wrap: break-word;
+                                color: #0d4f9a;
+                            }
+                            
+                            .center-image a {
+                                color: #2f84ed !important;
+                                text-decoration: none !important;
+                                cursor: pointer !important;
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                            
+                            .center-image a:hover {
+                                opacity: .6;
+                            }
+                            
+                            .center-image span {
+                                color: #2bb34d;
+                            }
+                            
+                            .right-section {
+                                text-align: center;
+                            }
+                            
+                            .right-section h1 {
+                                font-size: 1.6rem;
+                                margin: 0;
+                                line-height: 39px;
+                                text-transform: none;
+                                letter-spacing: 0;
+                                font-weight: 700;
+                                word-wrap: break-word;
+                                text-shadow: 0.8px 0 #0d4f9a;
+                                color: #0d4f9a;
+                            }
+                            
+                            .right-section h2 {
+                                font-size: 16px!important;
+                                text-transform: none;
+                                letter-spacing: 0;
+                                font-weight: 400 !important;
+                                color: #000;
+                                text-shadow: none;
+                            }
+                            
+                            .nav {
+                                flex-wrap: nowrap !important;
+                            }
+                            
+                            .nav-pills .nav-link.active,
+                            .nav-pills .show>.nav-link {
+                                color: #fff!important;
+                                background-color: #0d4f9a!important;
+                            }
+                            
+                            .Custombtn:focus {
+                                color: #fff!important;
+                                background-color: #0d4f9a!important;
+                                font-weight: 700!important;
+                            }
+                            
+                            .Custombtn {
+                                text-align: center!important;
+                                padding: 15px 0!important;
+                                font-size: small!important;
+                                color: #09488f!important;
+                                border: 2px solid #09488f!important;
+                                border-radius: 4px!important;
+                                height: fit-content!important;
+                                width: 23vw!important;
+                                font-size: 18px!important;
+                            }
+                            
+                            .cards {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            
+                            .card-1 {
+                                border: 2px solid #0d4f9a;
+                                padding: 18px;
+                                width: 18vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                margin-top: 15px;
+                                height: fit-content;
+                            }
+                            
+                            .card-2 {
+                                border: 5px solid #0d4f9a !important;
+                                width: 16vw !important;
+                                margin: 0 -2px;
+                                padding: 0 25px 25px 25px !important;
+                            }
+                            
+                            .card-1-info {
+                                text-align: center;
+                                margin: 0 0 12px 0;
+                            }
+                            
+                            .card-1 img,
+                            .accordion-container {
+                                display: none;
+                            }
+                            
+                            .card-1-heading {
+                                color: #0d4f9a;
+                                font-weight: 700;
+                                font-size: 2.125em;
+                                margin-bottom: 1rem;
+                            }
+                            
+                            .card-2-heading {
+                                text-shadow: .9px 0 #2bb34d!important;
+                                color: #2bb34d;
+                                font-weight: bolder;
+                                line-height: normal;
+                                font-size: 2.25rem;
+                                margin-bottom: 0;
+                            }
+                            
+                            .margin-style {
+                                margin-bottom: 5rem;
+                            }
+                            
+                            .save {
+                                color: #db421e !important;
+                                font-size: 1.5rem;
+                                font-weight: bolder;
+                                margin: 0;
+                                padding: 0;
+                                margin-top: -20px;
+                            }
+                            
+                            .card-button button {
+                                font-size: 0.8rem;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                color: #fff;
+                                background-color: #2bb34d;
+                                font-family: Lato, Helvetica Neue, sans-serif;
+                                cursor: pointer;
+                                border-radius: 5px;
+                                padding: 12px 20px;
+                                border: none !important;
+                            }
+                            
+                            .button-footer {
+                                display: none;
+                                font-size: .875em;
+                                letter-spacing: 0;
+                                line-height: 0;
+                                margin: 0;
+                                width: 100%;
+                                text-align: center;
+                                font-weight: 900;
+                                font-style: italic;
+                                color: #0d4f9a;
+                            }
+                            
+                            .top-card-heading {
+                                background-color: #0d4f9a;
+                                border: 2px solid #0d4f9a;
+                                color: #fff;
+                                font-size: 20px;
+                                font-weight: 900;
+                                position: relative;
+                                width: inherit;
+                                margin-bottom: 4px;
+                                text-align: center;
+                                top: -6px;
+                            }
+                            
+                            .top-card-heading h2 {
+                                font-size: 1.3rem !important;
+                                padding: 0.2rem 0;
+                                font-weight: 700 !important;
+                                margin-bottom: 0 !important;
+                            }
+                            
+                            .carousel-text {
+                                font-weight: 700;
+                                line-height: 1.2;
+                                letter-spacing: .5px;
+                                color: #0D4F9A;
+                                font-size: 16px;
+                                text-align: center;
+                                margin-top: 4rem;
+                            }
+                            
+                            .carousel-container {
+                                display: none;
+                            }
+                            
+                            .carousel-control-next-icon {
+                                background-image: url('img/chevron-right-solid.svg') !important;
+                            }
+                            
+                            .carousel-control-prev-icon {
+                                background-image: url('img/chevron-left-solid.svg') !important;
+                            }
+                            
+                            .carousel-indicators {
+                                bottom: -50px !important;
+                            }
+                            
+                            .carousel-indicators [data-bs-target] {
+                                flex: 0 1 auto;
+                                margin-right: 3px;
+                                margin-left: 3px;
+                                text-indent: -999px;
+                                cursor: pointer;
+                                background-clip: padding-box;
+                                border: 0;
+                                opacity: .5;
+                                height: 12px !important;
+                                width: 12px !important;
+                                margin: 0 10px !important;
+                                border-radius: 100%;
+                                background-color: #000 !important;
+                            }
+                            
+                            .carousel-indicators .active {
+                                background-color: #0056b8!important;
+                            }
+                            
+                            .slick-prev {
+                                left: 20px !important;
+                                z-index: 9999 !important;
+                            }
+                            
+                            .slick-prev,
+                            .slick-next {
+                                right: 20px !important;
+                                z-index: 9999 !important;
+                            }
+                            
+                            .slick-next.slick-disabled:before,
+                            .slick-prev.slick-disabled:before {
+                                opacity: 1 !important;
+                            }
+                            
+                            .image {
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                            }
+                            
+                            .overlay {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 0;
+                                transition: .3s ease;
+                            }
+                            
+                            .image-container:hover {
+                                opacity: 0.3;
+                                cursor: pointer;
+                            }
+                            
+                            .overlay:hover {
+                                opacity: 0.7;
+                            }
+                            
+                            .icon {
+                                color: white;
+                                font-size: 50px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                -ms-transform: translate(-50%, -50%);
+                                text-align: center;
+                            }
+                            
+                            .fa-instagram:hover {
+                                color: white !important;
+                            }
+                            
+                            .fa-instagram::before {
+                                color: white !important;
+                            }
+                            
+                            .slick-dots {
+                                display: none !important;
+                            }
+                            
+                            .text-list-heading {
+                                font-size: 1.25rem !important;
+                                font-weight: 700 !important;
+                                color: #333;
+                                text-transform: unset;
+                                margin-bottom: 27.5px !important;
+                                letter-spacing: .1em;
+                                word-wrap: break-word;
+                            }
+                            
+                            .text-list-subheading {
+                                font-size: 16px;
+                                font-weight: bold;
+                                color: #333;
+                                line-height: 1.5;
+                            }
+                            
+                            .text-list ul {
+                                list-style: disc outside;
+                                margin: 0 0 17.5px 35px;
+                                padding: 0;
+                            }
+                            
+                            .text-list li {
+                                margin-bottom: 4px;
+                                list-style: inherit;
+                            }
+                            
+                            .text-list {
+                                padding: 0 5%;
+                            }
+                            
+                            .box-container .box {
+                                display: flex;
+                                justify-content: stretch;
+                                align-items: center;
+                                flex-direction: column;
+                                text-align: center!important;
+                                text-transform: uppercase;
+                                border: 1px solid#e8e9eb;
+                                padding: 22px 30px;
+                                background-color: #003663!important;
+                                font-size: 16px;
+                                color: #fff;
+                                font-weight: 500;
+                                line-height: 1.618;
+                            }
+                            
+                            .box img {
+                                position: relative;
+                                top: -48px;
+                                height: 50px;
+                                width: 50px;
+                            }
+                            
+                            .feature-customer-row {
+                                padding: 35px 0;
+                            }
+                            
+                            .feature-customer-review-column {
+                                border-right: 8px solid#2bb34d;
+                                height: 250px;
+                                text-align: right;
+                            }
+                            
+                            .feature-customer-review-column-2 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                text-align: center;
+                            }
+                            
+                            .feature-customer-review-column p {
+                                color: #fff;
+                                font-size: 3.5rem;
+                                line-height: 110%;
+                                font-weight: 700;
+                                margin: 0 0 17.5px;
+                                word-wrap: break-word;
+                                padding-right: 2.5rem;
+                                text-transform: uppercase;
+                            }
+                            
+                            .feature-customer-review-column-2 p,
+                            em,
+                            .verified-buyer {
+                                color: #fff;
+                                font-size: 1.5rem;
+                                margin-bottom: unset;
+                                font-weight: 700;
+                                padding: 0 35px;
+                                line-height: 1.618;
+                            }
+                            
+                            .vl {
+                                border-bottom: 12px solid #2bb34d;
+                                width: 80%;
+                                display: none;
+                            }
+                            
+                            .verified-buyer {
+                                color: #2bb34d;
+                                text-transform: uppercase;
+                            }
+                            
+                            .star-image {
+                                width: 25%;
+                            }
+                            
+                            .feature-customer-row .feature-customer-review-column a {
+                                color: #2bb34d;
+                                font-weight: 500;
+                                text-decoration: none;
+                                padding-right: 2.5rem;
+                                font-size: 1.375rem;
+                            }
+                            
+                            .feature-customer-row .feature-customer-review-column a:hover {
+                                opacity: 0.6 !important;
+                            }
+                            
+                            .main-video-container {
+                                background-color: #0056b8;
+                            }
+                            
+                            .main-video-container h1 {
+                                font-size: 35px;
+                                line-height: 50px;
+                                color: #fff;
+                                text-align: center;
+                                padding: 25px 0;
+                                margin: 0;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                            }
+                            
+                            .main-video-container .main-video {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 75%;
+                                height: 80vh;
+                            }
+                            
+                            .main-video-container .bottom-video {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 80%;
+                                height: 40vh;
+                            }
+                            
+                            .nav-border-bottom {
+                                border-bottom: 1px solid #ddd;
+                                margin: 0;
+                            }
+                            
+                            .custom-tab {
+                                color: #0d4f9a !important;
+                                font-size: 13px !important;
+                                text-shadow: 0.5px 0 #0d4f9a !important;
+                                text-transform: uppercase !important;
+                                padding: 20px 20px !important;
+                            }
+                            
+                            .nav-tab .nav-link.active,
+                            .nav-tab .show>.active {
+                                border-bottom: 4px solid #2bb34d!important;
+                            }
+                            
+                            .custom-tab:hover {
+                                border-bottom: 4px solid #2bb34d!important;
+                                opacity: .6;
+                            }
+                            
+                            .accordion-button:not(.collapsed)::after {
+                                background-image: none !important;
+                            }
+                            
+                            .accordion-button::after {
+                                background-image: none !important;
+                            }
+                            
+                            *,
+                             ::after,
+                             ::before {
+                                box-sizing: border-box;
+                            }
+                            
+                            .accordion-header p {
+                                background-color: #ffff !important;
+                                color: #0d4f9a !important;
+                                cursor: pointer !important;
+                                padding: 18px !important;
+                                width: 100% !important;
+                                border-top: 1px solid #0d4f9a !important;
+                                border-bottom: 1px solid #0d4f9a !important;
+                                border-left: none !important;
+                                border-right: none !important;
+                                text-align: center !important;
+                                outline: none !important;
+                                font-size: 1em !important;
+                                font-weight: 900 !important;
+                                text-shadow: 0.5px 0 #0d4f9a !important;
+                                transition: .4s !important;
+                                margin-bottom: -1px !important;
+                                margin-top: -1px !important;
+                                text-transform: uppercase !important;
+                            }
+                            
+                            .accordion-button {
+                                display: block !important;
+                            }
+                            
+                            @media only screen and (max-width: 280px) {}
+                            
+                            @media only screen and (max-width: 768px) {
+                                #left-navbar,
+                                nav,
+                                .left-image-gallery img,
+                                .item img,
+                                .card-2 h2,
+                                .top-card-heading,
+                                .main-image,
+                                .tabs-container {
+                                    display: none;
+                                }
+                                .accordion-container {
+                                    padding: 0 !important;
+                                }
+                                .carousel-container,
+                                .accordion-container {
+                                    display: block;
+                                }
+                                .button-footer,
+                                .card-1 img {
+                                    display: block;
+                                    padding: 1rem 0;
+                                }
+                                .Custombtn {
+                                    width: 40vw!important;
+                                    font-size: 14px!important;
+                                }
+                                .cards {
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                }
+                                .card-1,
+                                .card-2 {
+                                    width: 100% !important;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                    padding: 0 !important;
+                                    top: unset;
+                                    margin: 0 0 10px;
+                                }
+                                .card-2 {
+                                    border: 6px solid #2bb34d !important;
+                                }
+                                .margin-style {
+                                    margin-bottom: 0 !important;
+                                }
+                                .card-1-heading {
+                                    margin-bottom: -2px;
+                                    font-size: 1rem;
+                                }
+                                .card-1-info {
+                                    margin: 0;
+                                }
+                                .card-1-info p {
+                                    display: inline-block;
+                                }
+                                .responsive-text {
+                                    font-size: 10px !important;
+                                }
+                                .save,
+                                .card-2-heading {
+                                    margin-top: 0;
+                                    font-size: 0.8rem;
+                                }
+                                .card-button button {
+                                    font-size: 0.6rem;
+                                }
+                                .text-list-heading {
+                                    font-size: 1rem !important;
+                                }
+                                .text-list-subheading {
+                                    font-size: 12px;
+                                }
+                                .text-list li {
+                                    font-size: 10px;
+                                }
+                                .box-container .box {
+                                    border: none !important;
+                                    font-size: 0.7rem;
+                                }
+                                .box img {
+                                    position: relative;
+                                    top: unset;
+                                }
+                                .feature-customer-review-column p {
+                                    font-size: 2rem;
+                                    padding-right: unset;
+                                }
+                                .feature-customer-row .feature-customer-review-column a {
+                                    padding-right: unset;
+                                }
+                                .feature-customer-review-column {
+                                    padding-right: unset;
+                                    border-right: unset;
+                                    text-align: center;
+                                }
+                                .star-image {
+                                    padding-top: 2rem;
+                                }
+                                .vl {
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+                                .main-video-container {
+                                    padding: 0!important;
+                                }
+                                .main-video-container .main-video {
+                                    width: 100%;
+                                    height: 40vh;
+                                }
+                                .main-video-container .bottom-video {
+                                    width: 90%;
+                                    height: 30vh;
+                                }
+                                .carousel-indicators [data-bs-target] {
+                                    margin: 0 3px !important;
+                                }
+                            }
+                            
+                            @media (min-width: 820px) and (max-width: 912px) {
+                                .top-card-heading {
+                                    display: none;
+                                }
+                                .button-footer,
+                                .card-1 img {
+                                    display: block;
+                                    padding: 1rem 0;
+                                }
+                                .Custombtn {
+                                    font-size: 14px!important;
+                                    width: 44vw !important;
+                                }
+                                .cards {
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                }
+                                .card-1,
+                                .card-2 {
+                                    width: 100% !important;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                    padding: 0 !important;
+                                    top: unset;
+                                    margin: 0 0 10px;
+                                }
+                                .card-2 {
+                                    border: 6px solid #2bb34d !important;
+                                }
+                                .margin-style {
+                                    margin-bottom: 0 !important;
+                                }
+                                .card-1-heading {
+                                    margin-bottom: -2px;
+                                    font-size: 1rem;
+                                }
+                                .card-1-info {
+                                    margin: 0;
+                                }
+                                .card-1-info p {
+                                    display: inline-block;
+                                }
+                                .responsive-text {
+                                    font-size: 14px !important;
+                                }
+                                .save,
+                                .card-2-heading {
+                                    margin-top: 0;
+                                    font-size: 1rem;
+                                }
+                                .card-button button {
+                                    font-size: 0.6rem;
+                                }
+                                .feature-customer-review-column p {
+                                    font-size: 3rem;
+                                    padding-right: 1rem;
+                                }
+                                .feature-customer-row .feature-customer-review-column a {
+                                    padding-right: 1rem;
+                                }
+                                .main-video-container .main-video {
+                                    width: 100%;
+                                    height: 40vh;
+                                }
+                            }
+                            
+                            @media (min-width: 992px) and (max-width: 1200px) {
+                                .top-card-heading {
+                                    display: none;
+                                }
+                                .button-footer,
+                                .card-1 img {
+                                    display: block;
+                                    padding: 1rem 0;
+                                }
+                                .cards {
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                }
+                                .card-1,
+                                .card-2 {
+                                    width: 100% !important;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                    padding: 0 !important;
+                                    top: unset;
+                                    margin: 0 0 10px;
+                                }
+                                .card-2 {
+                                    border: 6px solid #2bb34d !important;
+                                }
+                                .margin-style {
+                                    margin-bottom: 0 !important;
+                                }
+                                .card-1-heading {
+                                    margin-bottom: -2px;
+                                    font-size: 1rem;
+                                }
+                                .card-1-info {
+                                    margin: 0;
+                                }
+                                .card-1-info p {
+                                    display: inline-block;
+                                }
+                                .responsive-text {
+                                    font-size: 14px !important;
+                                }
+                                .save,
+                                .card-2-heading {
+                                    margin-top: 0;
+                                    font-size: 1rem;
+                                }
+                                .card-button button {
+                                    font-size: 0.6rem;
+                                }
+                                .feature-customer-review-column p {
+                                    font-size: 3rem;
+                                    padding-right: 1rem;
+                                }
+                                .feature-customer-row .feature-customer-review-column a {
+                                    padding-right: 1rem;
+                                }
+                            }
