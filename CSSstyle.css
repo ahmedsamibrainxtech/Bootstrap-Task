@@ -4,6 +4,7 @@
                             
                             body {
                                 font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif;
+                                overflow-x: hidden;
                             }
                             
                             #left-navbar {
@@ -41,11 +42,6 @@
                                 padding: 0 10px;
                             }
                             
-                            nav .breadcrumb a {
-                                color: #3c7aae;
-                                font-weight: 500;
-                            }
-                            
                             .breadcrumb-item+.breadcrumb-item::before {
                                 color: #0d4f9a !important;
                             }
@@ -54,6 +50,7 @@
                                 background-color: transparent;
                                 color: #0d4f9a;
                                 text-decoration: none !important;
+                                font-weight: normal;
                             }
                             
                             nav .breadcrumb a:hover {
@@ -68,9 +65,16 @@
                                 opacity: .6;
                             }
                             
+                            .center-image {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                            }
+                            
                             .center-image h1 {
-                                font-size: 1.625rem;
-                                font-weight: 700;
+                                font-size: 1.5rem !important;
+                                font-weight: 500 !important;
                                 text-align: center;
                                 text-shadow: .5px 0 currentColor;
                                 text-transform: uppercase;
@@ -81,12 +85,16 @@
                                 color: #0d4f9a;
                             }
                             
+                            .main-image {
+                                max-width: 90% !important;
+                            }
+                            
                             .center-image a {
                                 color: #2f84ed !important;
                                 text-decoration: none !important;
                                 cursor: pointer !important;
                                 font-size: 13px;
-                                font-weight: 500;
+                                font-weight: normal !important;
                             }
                             
                             .center-image a:hover {
@@ -102,12 +110,12 @@
                             }
                             
                             .right-section h1 {
-                                font-size: 1.6rem;
+                                font-size: 1.4rem !important;
                                 margin: 0;
                                 line-height: 39px;
                                 text-transform: none;
                                 letter-spacing: 0;
-                                font-weight: 700;
+                                font-weight: 500 !important;
                                 word-wrap: break-word;
                                 text-shadow: 0.8px 0 #0d4f9a;
                                 color: #0d4f9a;
@@ -130,6 +138,7 @@
                             .nav-pills .show>.nav-link {
                                 color: #fff!important;
                                 background-color: #0d4f9a!important;
+                                font-weight: 500;
                             }
                             
                             .Custombtn:focus {
@@ -180,34 +189,35 @@
                             }
                             
                             .card-1 img,
-                            .accordion-container {
+                            .accordion-container,
+                            .watch-video-button {
                                 display: none;
                             }
                             
                             .card-1-heading {
                                 color: #0d4f9a;
-                                font-weight: 700;
-                                font-size: 2.125em;
+                                font-weight: 500;
+                                font-size: 2.25rem;
                                 margin-bottom: 1rem;
                             }
                             
                             .card-2-heading {
                                 text-shadow: .9px 0 #2bb34d!important;
                                 color: #2bb34d;
-                                font-weight: bolder;
-                                line-height: normal;
+                                font-weight: 500 !important;
+                                line-height: 35px;
                                 font-size: 2.25rem;
                                 margin-bottom: 0;
                             }
                             
                             .margin-style {
-                                margin-bottom: 5rem;
+                                margin-bottom: 4rem;
                             }
                             
                             .save {
                                 color: #db421e !important;
                                 font-size: 1.5rem;
-                                font-weight: bolder;
+                                font-weight: 500 !important;
                                 margin: 0;
                                 padding: 0;
                                 margin-top: -20px;
@@ -380,13 +390,14 @@
                                 margin-bottom: 27.5px !important;
                                 letter-spacing: .1em;
                                 word-wrap: break-word;
+                                font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif !important;
                             }
                             
                             .text-list-subheading {
                                 font-size: 16px;
-                                font-weight: bold;
                                 color: #333;
                                 line-height: 1.5;
+                                font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif !important;
                             }
                             
                             .text-list ul {
@@ -412,19 +423,23 @@
                                 text-align: center!important;
                                 text-transform: uppercase;
                                 border: 1px solid#e8e9eb;
-                                padding: 22px 30px;
+                                padding: 0 30px 22px;
                                 background-color: #003663!important;
-                                font-size: 16px;
-                                color: #fff;
-                                font-weight: 500;
                                 line-height: 1.618;
                             }
                             
                             .box img {
                                 position: relative;
-                                top: -48px;
+                                top: -25px;
                                 height: 50px;
                                 width: 50px;
+                            }
+                            
+                            .box-text {
+                                font-size: 16px;
+                                color: #fff;
+                                font-weight: normal !important;
+                                text-align: center!important;
                             }
                             
                             .feature-customer-row {
@@ -505,15 +520,16 @@
                                 text-align: center;
                                 padding: 25px 0;
                                 margin: 0;
-                                font-weight: 700;
-                                text-transform: uppercase;
+                                font-weight: 500 !important;
+                                text-transform: capitalize;
+                                font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif !important;
                             }
                             
                             .main-video-container .main-video {
                                 display: block;
                                 margin-left: auto;
                                 margin-right: auto;
-                                width: 75%;
+                                width: 70%;
                                 height: 80vh;
                             }
                             
@@ -521,8 +537,8 @@
                                 display: block;
                                 margin-left: auto;
                                 margin-right: auto;
-                                width: 80%;
-                                height: 40vh;
+                                width: 75%;
+                                height: 45vh;
                             }
                             
                             .nav-border-bottom {
@@ -604,13 +620,18 @@
                                     padding: 0 !important;
                                 }
                                 .carousel-container,
-                                .accordion-container {
+                                .accordion-container,
+                                .watch-video-button {
                                     display: block;
                                 }
                                 .button-footer,
                                 .card-1 img {
                                     display: block;
                                     padding: 1rem 0;
+                                }
+                                .right-section h1,
+                                .center-image h1 {
+                                    font-size: 1.4rem !important;
                                 }
                                 .Custombtn {
                                     width: 40vw!important;
@@ -637,7 +658,7 @@
                                 }
                                 .card-1-heading {
                                     margin-bottom: -2px;
-                                    font-size: 1rem;
+                                    font-size: 1.3rem;
                                 }
                                 .card-1-info {
                                     margin: 0;
@@ -651,7 +672,7 @@
                                 .save,
                                 .card-2-heading {
                                     margin-top: 0;
-                                    font-size: 0.8rem;
+                                    font-size: 1rem;
                                 }
                                 .card-button button {
                                     font-size: 0.6rem;
@@ -660,21 +681,28 @@
                                     font-size: 1rem !important;
                                 }
                                 .text-list-subheading {
-                                    font-size: 12px;
+                                    font-size: 14px;
                                 }
                                 .text-list li {
-                                    font-size: 10px;
+                                    font-size: 12px;
+                                }
+                                .text-list ul {
+                                    margin: 0 0 8.5px 15px;
                                 }
                                 .box-container .box {
                                     border: none !important;
                                     font-size: 0.7rem;
+                                    padding: 22px 15px;
+                                }
+                                .box-text {
+                                    font-size: 12px;
                                 }
                                 .box img {
                                     position: relative;
                                     top: unset;
                                 }
                                 .feature-customer-review-column p {
-                                    font-size: 2rem;
+                                    font-size: 3rem;
                                     padding-right: unset;
                                 }
                                 .feature-customer-row .feature-customer-review-column a {
@@ -712,6 +740,9 @@
                             @media (min-width: 820px) and (max-width: 912px) {
                                 .top-card-heading {
                                     display: none;
+                                }
+                                .watch-video-button {
+                                    display: block;
                                 }
                                 .button-footer,
                                 .card-1 img {
